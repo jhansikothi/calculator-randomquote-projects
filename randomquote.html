@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="randomquote.css">
+</head>
+<body>
+    <div id="quote"></div>
+    <button onclick="getQuote()">Get Quote</button>
+
+<script>
+
+    let quote=document.getElementById("quote")
+
+const quotes = [
+            "Do one thing every day that scares you..",
+            "If you can dream it, you can do it.",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "Earn your leadership every day.",
+            "Try to be a rainbow in someone's cloud.",
+            "A year from now you may wish you had started today.",
+            "Nothing is impossible, the word itself says “I’m possible!",
+             "The only place you find success before work is in the dictionary.",
+            "Those who dare to fail miserably can achieve greatly.",
+            "If you don’t like something, change it. If you can’t change it, change your attitude.",
+            "Go until you fail, then keep going.",
+            "A person who never made a mistake never tried anything new..",
+            "If you obey all the rules, you miss all the fun.",
+            "Age is something that doesn't matter, unless you are a cheese.",
+            "All our dreams can come true, if we have the courage to pursue them.",
+            "Remember why you started.",
+            "Be so good they can't ignore you.",
+            "Don't be pushed by your problems. Be led by your dreams",
+            "Go confidently in the direction of your dreams. Live the life you have imagined.",
+            "Don't be pushed by your problems. Be led by your dreams.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "If it doesn't challenge you, it won't change you."
+        ];
+    function getQuote(){
+         let singleQuote=Math.floor(Math.random() * quotes.length)
+         console.log(singleQuote);
+         quote.textContent=quotes[singleQuote]
+    }
+</script>
+</body>
+</html>
+
